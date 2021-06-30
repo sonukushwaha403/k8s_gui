@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KUBERNETES</title>
+    </head>
+
+<!-- Launch Container -->
+<body style="background-color:deepskyblue;">
+    <h3 style="text-align: center; font-size: 30px;font-family:Verdana;"><u>KUBERNETES GUI Services</u></h3>
+     
+		 
+             
+                
+
+              
+
+<h1>To lunch pods/OS</h1>
+<h3>Enter your unique_pod_name : <input id="i1" /></h3><br /> 
+Enter your Pod image name:<input id="i2"/>
+<button onclick="launchPod()">submit</button> 
+ 
+
+    <br/>
+
+<h1>To create deployment/OS</h1>
+<h3>Enter your unique Deployment Name : <input id="i3" /></h3><br /> 
+Enter your Deployment image name:<input id="i4"/>
+<button onclick="launchDeployment()">submit</button> 
+ 
+<br/>
+
+<h1>To expose deployment/OS</h1>
+<h3>Enter your unique Deployment Name : <input id="i5" /></h3><br /> 
+ 
+<button onclick="exposeService()">submit</button> 
+
+   <br/>
+
+ 
+
+<h1>To delete resources</h1>
+<h3>Enter resource name to delete : <input id="i9" /></h3><br /> 
+Enter unique name for above resource:<input id="i10"/>
+<button onclick="removeService()">submit</button> 
+
+ <br/>
+
+<h1>To delete  all resources</h1>
+ 
+<button onclick="deleteall()">submit</button> 
+
+ <br/>
+
+<h1>To get resources/OS</h1>
+<h3>Enter resource name to get : <input id="i11" /></h3><br /> 
+Enter unique name for above resource to get:<input id="i12"/>
+<button onclick="7get()">submit</button> 
+ 
+   <br/>
+<pre><div id="d1">output section</div></pre>
+
+</body>
+</html>
+ <script src="script.js"></script>
